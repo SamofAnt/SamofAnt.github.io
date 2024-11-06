@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anton Samofalov</title>
+    <link rel="stylesheet" href="styles/style.css">
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">Anton Samofalov</div>
+            <button class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <div class="profile">
+                <img src="imgs/my-photo.jpeg" alt="Anton Samofalov" class="profile-img">
+                <h1>Anton Samofalov</h1>
+                <p class="profession">Junior Developer</p>
+                <p class="bio">Passionate about writing applications on the .NET platform using ASP.NET Core and
+                    creating React applications.</p>
+                <div class="home-buttons">
+                    <a href="#contact" class="btn primary-btn">Contact Me</a>
+                    <a href="other/resume.pdf" class="btn secondary-btn" target="_blank" download>Download resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Background</h3>
+                    <p>
+                        Hello everyone! I am a beginner programmer. I am currently studying at Seneca College. <br />I
+                        have some experience in writing applications on the .NET platform using ASP.NET Core. I also
+                        have some knowledge in creating React applications.
+                    </p>
+                </div>
+                <div class="skills">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill">HTML5</div>
+                        <div class="skill">CSS3</div>
+                        <div class="skill">JavaScript</div>
+                        <div class="skill">React</div>
+                        <div class="skill">Node.js</div>
+                        <div class="skill">C#</div>
+                        <div class="skill">C++</div>
+                        <div class="skill">Java</div>
+                        <div class="skill">ASP.NET Core</div>
+                        <div class="skill">SQL</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="imgs/react-admin-img.jpg" alt="E-commerce Website">
+                    <div class="project-info">
+                        <h3>React Admin Panel</h3>
+                        <p>Developed an admin interface for managing content and users using React.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                            <span>Java</span>
+                            <span>Spring Framework</span>
+                            <span>MySQL</span>
+                        </div>
+                        <a href="https://github.com/SamofAnt/react-admin-panel" class="project-link"
+                            target="_blank">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="imgs/live-store-img.jpg" alt="Task Manager">
+                    <div class="project-info">
+                        <h3>Live Store Application</h3>
+                        <p>Created an e-commerce platform that supports live data using the Blazor framework.</p>
+                        <div class="project-tags">
+                            <span>C#</span>
+                            <span>SQL</span>
+                            <span>Blazor Framework</span>
+                        </div>
+                        <a href="https://github.com/SamofAnt/LiveStore" class="project-link" target="_blank">View
+                            Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="imgs/university-img.jpg" alt="Weather App">
+                    <div class="project-info">
+                        <h3>University Admin Panel </h3>
+                        <p>Built an admin system for managing university operations using Blazor.</p>
+                        <div class="project-tags">
+                            <span>C#</span>
+                            <span>SQL</span>
+                            <span>Blazor Framework</span>
+                        </div>
+                        <a href="https://github.com/SamofAnt/BlazorServerUniversity" class="project-link"
+                            target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <form id="contact-form" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" name="company" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 Anton Samofalov. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://x.com" target="_blank">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M13.795 10.533 20.68 2h-3.073l-5.255 6.517L7.69 2H1l7.806 10.91L1.47 22h3.074l5.705-7.07L15.31 22H22l-8.205-11.467Zm-2.38 2.95L9.97 11.464 4.36 3.627h2.31l4.528 6.317 1.443 2.02 6.018 8.409h-2.31l-4.934-6.89Z" />
+                        </svg>
+
+
+                    </a>
+                    <a href="https://www.instagram.com/samof_aant/" target="_blank">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M3 8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5V8Zm5-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H8Zm7.597 2.214a1 1 0 0 1 1-1h.01a1 1 0 1 1 0 2h-.01a1 1 0 0 1-1-1ZM12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm-5 3a5 5 0 1 1 10 0 5 5 0 0 1-10 0Z"
+                                clip-rule="evenodd" />
+                        </svg>
+
+                    </a>
+
+                    <a href="https://github.com/SamofAnt" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                            fill="currentColor">
+                            <path
+                                d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.489.5.091.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.157-1.11-1.465-1.11-1.465-.907-.62.069-.608.069-.608 1.003.07 1.53 1.03 1.53 1.03.892 1.529 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.252-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.682-.103-.253-.447-1.27.098-2.648 0 0 .841-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.845c.853.004 1.71.115 2.511.337 1.909-1.296 2.75-1.026 2.75-1.026.545 1.378.201 2.395.099 2.648.64.698 1.029 1.591 1.029 2.682 0 3.842-2.337 4.687-4.566 4.935.36.31.68.921.68 1.856 0 1.338-.012 2.419-.012 2.75 0 .268.18.579.688.48C19.138 20.165 22 16.418 22 12c0-5.523-4.477-10-10-10z" />
+                        </svg>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/anton-samofalov-b43946254/" target="_blank">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path fill-rule="evenodd"
+                                d="M12.51 8.796v1.697a3.738 3.738 0 0 1 3.288-1.684c3.455 0 4.202 2.16 4.202 4.97V19.5h-3.2v-5.072c0-1.21-.244-2.766-2.128-2.766-1.827 0-2.139 1.317-2.139 2.676V19.5h-3.19V8.796h3.168ZM7.2 6.106a1.61 1.61 0 0 1-.988 1.483 1.595 1.595 0 0 1-1.743-.348A1.607 1.607 0 0 1 5.6 4.5a1.601 1.601 0 0 1 1.6 1.606Z"
+                                clip-rule="evenodd" />
+                            <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
+                        </svg>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
